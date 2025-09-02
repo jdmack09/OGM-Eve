@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out Gearing Mechanics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Logo Button -->
+  <img src="Images/Logo.png" id="menu-btn" alt="Menu Button">
+
+  <!-- Sidebar -->
+  <aside id="mySidebar" class="sidebar">
+    <span class="close-btn" onclick="closeNav()">&times;</span>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('pilots')">Pilots</a>
+    <a href="#" onclick="showPage('ships')">Ships</a>
+    <a href="#" onclick="showPage('contact')">Questions</a>
+    <a href="#" onclick="showPage('join')">Join</a>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Home Page -->
+    <section id="home" class="page">
+      <h1>Out Gearing Mechanics</h1>
+      <img src="Images/Logo.png" alt="Out Gearing Mechanics Logo" class="home-banner">
+      <p>OGM is a Casual Eve Corporation focusing first and foremost on building a close group of folks who enjoy playing the game together. Have a look around!
+    Get to know our pilots, and their favorite ships. Sorry no fits here! You know where to go to find those if you really want them.
+    If you want to Join hit that Join Link up top and fill out the form our response will be at warpspeeds!
+    Got a question, or just want to chat? Hit that Question Link! We hope you reach the far ends of the Universe, and Fly Safe Capsuleer!
+  </p>
+    </section>
+
+    <!-- Pilots Page -->
+    <section id="pilots" class="page" style="display:none;">
+      <h1>Pilots of the Corporation</h1>
+      <div class="carousel-container-pilots">
+        <div class="nav-btn nav-left" onclick="rotatePilotsCarousel(-1)">❮</div>
+        <div class="carousel" id="carousel">
+          
+          <!-- Pilot Cards -->
+          <div class="card">
+            <img src="Images/Alveras.jpg" alt="Alveras Enaka">
+            <h3>Alveras Enaka</h3>
+            <p class="title">Dad</p>
+            <p>Eve University</p>
+            <p>Heals +14's with undergeared Shaman</p>
+            <p>Never came back with the Milk</p>
+            <button class="contact-btn" onclick="showPage('contact')">Contact</button>
+          </div>
+
+          <div class="card">
+            <img src="Images/Tivy.jpg" alt="Tivy">
+            <h3>Tivy</h3>
+            <p class="title">Full-Time Toker</p>
+            <p>Eve University</p>
+            <p>He's Mad, but is Free Use!</p>
+            <p>Up in your Worm Hole</p>
+            <button class="contact-btn" onclick="showPage('contact')">Contact</button>
+          </div>
+
+          <div class="card">
+            <img src="Images/Bee.jpg" alt="Bee">
+            <h3>Beewithanitch</h3>
+            <p class="title">Professional Degen</p>
+            <p>Eve University</p>
+            <p>Good at Calculations, Bad at Math</p>
+            <p>Worst Paladin NA</p>
+            <button class="contact-btn" onclick="showPage('contact')">Contact</button>
+          </div>
+
+          <div class="card">
+            <img src="Images/Psy.jpg" alt="ThatPsyGuy">
+            <h3>ThatPsyGuy</h3>
+            <p class="title">Miner Appreciator</p>
+            <p>Eve University</p>
+            <p>Sasshole</p>
+            <p>For Psyience!</p>
+            <button class="contact-btn" onclick="showPage('contact')">Contact</button>
+          </div>
+        </div>
+        <div class="nav-btn nav-right" onclick="rotatePilotsCarousel(1)">❯</div>
+      </div>
+    </section>
+
+    <!-- Ships Page -->
+    <section id="ships" class="page" style="display:none;">
+      <h1>Our Favorite Ships</h1>
+      <div class="carousel-container">
+        <div class="nav-btn left" onclick="rotateCarousel(-1)">❮</div>
+        <div class="carousel3D" id="carousel3D">
+
+          <div class="carousel-item3D">
+            <img src="Images/Raven.jpg" alt="Raven">
+            <h2>
+              A visit from the Raven is a visit from death itself. <br>
+              – Guristas Pirate after surrender to State forces
+            </h2>
+          </div>
+
+          <div class="carousel-item3D">
+            <img src="Images/Stratios.jpg" alt="Stratios">
+            <h2>
+              Until all accept the Relic's light, our work must be protected by shadows. <br>
+              – Reverend Mother Santimona Sarpati
+            </h2>
+          </div>
+
+          <div class="carousel-item3D">
+            <img src="Images/Hurricane.jpg" alt="Hurricane">
+            <h2>
+              We rise as one, unchained and unstoppable. <br>
+              – Sanmatar Maleatu Shakor
+            </h2>
+          </div>
+
+          <div class="carousel-item3D">
+            <img src="Images/Drake.jpg" alt="Drake">
+            <h2>
+              It has been brought. <br>
+              – Unknown Caldari Pilot
+            </h2>
+          </div>
+
+        </div>
+        <div class="nav-btn right" onclick="rotateCarousel(1)">❯</div>
+      </div>
+    </section>
+
+    <!-- Contact/Questions Page -->
+    <section id="contact" class="page" style="display:none;">
+      <div class="content">
+        <h2>Out Gearing Mechanics</h2>
+        <p>Have questions or just want to get in contact? Fill out the form below!</p>
+        <form action="https://formspree.io/f/xnnzzvnq" method="POST">
+          
+          <label>
+            Your Character Name<br>
+            <input type="text" name="character" required>
+          </label><br><br>
+
+          <p>Who is your question for:</p>
+          <input type="radio" id="Alveras" name="who" value="Alveras">
+          <label for="Alveras">Alveras</label><br>
+          <input type="radio" id="Tivy" name="who" value="Tivy">
+          <label for="Tivy">Tivy</label><br>
+          <input type="radio" id="Bee" name="who" value="Bee">
+          <label for="Bee">Bee</label><br>
+          <input type="radio" id="Psy" name="who" value="Psy">
+          <label for="Psy">Psy</label><br><br>
+
+          <label>
+            Your Question:<br>
+            <textarea name="question" required></textarea>
+          </label><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Join Page -->
+    <section id="join" class="page" style="display:none;">
+      <div class="content">
+        <h2>Join the Out Gearing Mechanics Corporation</h2>
+        <form action="https://formspree.io/f/mqallbne" method="POST">
+          
+          <label>
+            Your Character Name:<br>
+            <input type="text" name="character" required>
+          </label><br><br>
+
+          <label>
+            Your Favorite Ship:<br>
+            <input type="text" name="favoriteShip">
+          </label><br><br>
+
+          <label>
+            Why is that your favorite?<br>
+            <textarea name="favoriteReason"></textarea>
+          </label><br><br>
+
+          <label>
+            Why do you want to join our Corporation?<br>
+            <textarea name="joinReason" required></textarea>
+          </label><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
