@@ -131,36 +131,44 @@
       </div>
     </section>
 
-    <!-- Contact/Questions Page -->
-    <section id="contact" class="page" style="display:none;">
-      <div class="content">
-        <h2>Out Gearing Mechanics</h2>
-        <p>Have questions or just want to get in contact? Fill out the form below!</p>
-        <form action="https://formspree.io/f/xnnzzvnq" method="POST">
-          
-          <label>
-            Your Character Name
-            <input type="text" name="character" required>
-          </label>
-          <p>Who is your question for:</p>
-          <input type="radio" id="Alveras" name="who" value="Alveras">
-          <label for="Alveras">Alveras</label>
-          <input type="radio" id="Tivy" name="who" value="Tivy">
-          <label for="Tivy">Tivy</label>
-          <input type="radio" id="Bee" name="who" value="Bee">
-          <label for="Bee">Bee</label>
-          <input type="radio" id="Psy" name="who" value="Psy">
-          <label for="Psy">Psy</label>
+<!-- Contact/Questions Page -->
+<section id="contact" class="page" style="display:none;">
+  <div class="content">
+    <h2>Out Gearing Mechanics</h2>
+    <p>Have questions or just want to get in contact? Fill out the form below!</p>
 
-          <label>
-            Your Question:
-            <textarea name="question" required></textarea>
-          </label>
+    <form action="https://formspree.io/f/xnnzzvnq" method="POST">
+      
+      <label>
+        Your Character Name
+        <input type="text" name="character" required>
+      </label>
 
-          <button type="submit">Send</button>
-        </form>
+      <p>Who is your question for:</p>
+      <div class="radio-group">
+        <input type="radio" id="Alveras" name="who" value="Alveras">
+        <label for="Alveras">Alveras</label>
+
+        <input type="radio" id="Tivy" name="who" value="Tivy">
+        <label for="Tivy">Tivy</label>
+
+        <input type="radio" id="Bee" name="who" value="Bee">
+        <label for="Bee">Bee</label>
+
+        <input type="radio" id="Psy" name="who" value="Psy">
+        <label for="Psy">Psy</label>
       </div>
-    </section>
+
+      <label>
+        Your Question:
+        <textarea name="question" required></textarea>
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
 
     <!-- Join Page -->
     <section id="join" class="page" style="display:none;">

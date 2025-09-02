@@ -364,6 +364,15 @@ form button:hover {
   transform: scale(1.05);
 }
 
+/* === Radio Group Container (centers radios) === */
+form .radio-group {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;
+  gap: 25px;                 /* spacing between options */
+  margin: 20px 0;
+}
+
 /* === Custom Radio Buttons === */
 form input[type="radio"] {
   display: none;
@@ -406,6 +415,7 @@ form input[type="radio"]:checked + label {
   color: rgb(255, 234, 0);
   font-weight: bold;
 }
+
 
 /* === Input Hover & Focus Effects === */
 form input[type="text"]:focus,
