@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  color: white;
+  color: rgb(255, 234, 0);
   background: black;
   background-image: 
     radial-gradient(2px 2px at 20px 30px, white, transparent),
@@ -312,7 +312,7 @@ form h2 {
 }
 
 form p {
-  color: #f1f1f1;
+  color: rgb(255, 234, 0);
   font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
@@ -373,7 +373,7 @@ form input[type="radio"] + label {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
-  color: white;
+  color: rgb(255, 234, 0);
   font-weight: normal;
   transition: color 0.3s;
 }
