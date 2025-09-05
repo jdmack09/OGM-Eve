@@ -134,15 +134,12 @@
 <!-- Contact/Questions Page -->
 <section id="contact" class="page" style="display:none;">
   <div class="content">
-    <h2>Out Gearing Mechanics</h2>
-    <p>Have questions or just want to get in contact? Fill out the form below!</p>
-
     <form action="https://formspree.io/f/xnnzzvnq" method="POST">
-      
-      <label>
-        Your Character Name
-        <input type="text" name="character" required>
-      </label>
+      <h2>Out Gearing Mechanics</h2>
+      <p>Have questions or just want to get in contact? Fill out the form below!</p>
+
+      <label for="character">Your Character Name:</label>
+      <input type="text" id="character" name="character" required>
 
       <p>Who is your question for:</p>
       <div class="radio-group">
@@ -159,10 +156,8 @@
         <label for="Psy">Psy</label>
       </div>
 
-      <label>
-        Your Question:
-        <textarea name="question" required></textarea>
-      </label>
+      <label for="question">Your Question:</label>
+      <textarea id="question" name="question" required></textarea>
 
       <button type="submit">Send</button>
     </form>
@@ -171,35 +166,28 @@
 
 
     <!-- Join Page -->
-    <section id="join" class="page" style="display:none;">
-      <div class="content">
-        <h2>Join the Out Gearing Mechanics Corporation</h2>
-        <form action="https://formspree.io/f/mqallbne" method="POST">
-          
-          <label>
-            Your Character Name:
-            <input type="text" name="character" required>
-          </label>
+<section id="join" class="page" style="display:none;">
+  <div class="content">
+    <form action="https://formspree.io/f/mqallbne" method="POST">
+      <h2>Join the Out Gearing Mechanics Corporation</h2>
 
-          <label>
-            Your Favorite Ship:
-            <input type="text" name="favoriteShip">
-          </label>
+      <label for="character">Your Character Name:</label>
+      <input type="text" id="character" name="character" required>
 
-          <label>
-            Why is that your favorite?
-            <textarea name="favoriteReason"></textarea>
-          </label>
+      <label for="favoriteShip">Your Favorite Ship:</label>
+      <input type="text" id="favoriteShip" name="favoriteShip">
 
-          <label>
-            Why do you want to join our Corporation?
-            <textarea name="joinReason" required></textarea>
-          </label>
+      <label for="favoriteReason">Why is that your favorite?</label>
+      <textarea id="favoriteReason" name="favoriteReason"></textarea>
 
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
+      <label for="joinReason">Why do you want to join our Corporation?</label>
+      <textarea id="joinReason" name="joinReason" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
 
   </main>
 
